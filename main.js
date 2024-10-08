@@ -14,4 +14,11 @@ const buttonEl = document.getElementById('button');
 
 //FASE 2: Colleghiamo un element list al pulsante 
 buttonEl.addEventListener('click', () => {     
+    //verifica se la lampadina è spenta
+    if(lampadinaSpenta.src.includes('./img/white_lamp.png')){
+        // se è spenta la lampadina viene accesa
+        lampadinaSpenta.src = './img/./img/yellow_lamp.png';
+        //cambia il del bottonetesto in spegni
+        buttonEl.innerText = 'Spegni';
+    }
 })
