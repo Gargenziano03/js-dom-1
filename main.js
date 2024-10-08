@@ -10,11 +10,8 @@ Per fare questo bonus potremmo aver bisogno del metodo string.includes()
 */
 
 //FASE 1: Seleziono gli elementi della DOM
-const buttonEl = document.querySelector('button');
+const buttonEl = document.getElementById('button');
 
 //FASE 2: Colleghiamo un element list al pulsante 
-function imput(){
-    console.log('testo cliccato');
-};
-
-buttonEl.addEventListener('click', imput);
+buttonEl.addEventListener('click', () => {     
+})
