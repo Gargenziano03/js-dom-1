@@ -11,14 +11,13 @@ Per fare questo bonus potremmo aver bisogno del metodo string.includes()
 
 //FASE 1: Seleziono gli elementi della DOM
 const buttonEl = document.getElementById('button');
+const lampadinaSpenta = documment.getElementById('spegni')
+const lampadinaAccesa = document.getElementById('accendi')
+
+lampadinaAccesa.classList.add('d-none');
 
 //FASE 2: Colleghiamo un element list al pulsante 
-buttonEl.addEventListener('click', () => {     
-    //verifica se la lampadina è spenta
-    if(lampadinaSpenta.src.includes('./img/white_lamp.png')){
-        // se è spenta la lampadina viene accesa
-        lampadinaSpenta.src = './img/./img/yellow_lamp.png';
-        //cambia il del bottonetesto in spegni
-        buttonEl.innerText = 'Spegni';
-    }
+buttonEl.addEventListener('click', () => {
+    lampadinaSpenta.classList.add('d-none');
+    lampadinaAccesa.classList.remove('d-none');
 })

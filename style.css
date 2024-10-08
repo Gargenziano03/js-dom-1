@@ -1,0 +1,12 @@
+img{
+    max-width: 150px;
+}
+
+#lampadinaSpenta{
+    position: relative;
+    display: block;
+}
+#lampadinaAccesa {
+    position: absolute;
+    display: none; 
+}
